@@ -17,6 +17,7 @@ fun             //回调函数
 curpage         //当前页
 pageSize        //分页个数
 amountArr       //可选择的每页条数的数组
+..0...
 
 
 
