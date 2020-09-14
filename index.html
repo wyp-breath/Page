@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <link type="text/css" rel="stylesheet" href="css/myPage.min.css" />
+        <script type="text/javascript" src="js/myPage.min.js"></script>
+    </head>
+    <body>
+        <div id="myPage"></div>
+        <script type="text/javascript">
+            var mypage = new myPage({
+                ele: 'myPage',  //如变更id，请自行修改css中选择器
+                dataTotal: 500, //总共多少条数据(必须)
+                fun: function (p) {
+                    //获取当前页数
+                    console.log(p);
+                }
+            });
+            mypage.init();
+        </script>
+    </body>
+</html>

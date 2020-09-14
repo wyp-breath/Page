@@ -1,0 +1,21 @@
+使用说明：
+①HTML中使用方法：
+例：var mypage = new myPage({
+       ele: 'myPage',  //如变更id，请自行修改css中选择器
+       dataTotal: 500, //总共多少条数据(必须)
+       fun: function (p) {
+           //获取当前页数
+           console.log(p);
+       }
+    });
+    mypage.init();
+②参数说明：
+ele(必须)       //获取当前元素
+dataTotal(必须) //总共多少数据
+count           //总共多少页
+fun             //回调函数
+curpage         //当前页
+pageSize        //分页个数
+amountArr       //可选择的每页条数的数组
+
+
